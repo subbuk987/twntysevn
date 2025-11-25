@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TwntySevn — Software Company</title>
+
+  <style>
+    /* RESET */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Inter", sans-serif; }
+
+    body {
+      background: linear-gradient(135deg, #e8f4ff, #f9fcff 40%, #ffffff);
+      color: #0d1b2a;
+      overflow-x: hidden;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, #5ab0ff, #82c8ff, #b9e2ff);
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      max-width: 600px;
+      font-size: 1.2rem;
+      color: #3b4b5a;
+      line-height: 1.6;
+    }
+
+    .btn-primary {
+      margin-top: 40px;
+      padding: 16px 42px;
+      background: linear-gradient(135deg, #5ab0ff, #7dc9ff, #b2e4ff);
+      border: none;
+      border-radius: 50px;
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 8px 30px rgba(90, 176, 255, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(90, 176, 255, 0.5);
+    }
+
+    /* ABSTRACT CIRCLES */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.5;
+      z-index: -1;
+    }
+
+    .c1 { width: 300px; height: 300px; background: #b2e4ff; top: -50px; left: -80px; }
+    .c2 { width: 350px; height: 350px; background: #82c8ff; bottom: -60px; right: -90px; }
+    .c3 { width: 220px; height: 220px; background: #d9f0ff; top: 40%; right: 5%; }
+
+    /* FEATURES */
+    .features {
+      padding: 100px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .feature-card {
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(100, 160, 255, 0.1);
+      transition: 0.3s all ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 60px rgba(100, 160, 255, 0.2);
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #0d1b2a;
+    }
+
+    .feature-card p {
+      font-size: 1rem;
+      color: #4a5c6d;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px;
+      text-align: center;
+      color: #708097;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+
+    <h1>Building Tomorrow’s Software</h1>
+    <p>
+      TwntySevn builds high-performance, scalable, and intelligent software systems for the next generation of businesses.
+      We turn ideas into world-class digital products.
+    </p>
+
+    <button class="btn-primary">Get Started</button>
+  </div>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>AI & Automation</h3>
+      <p>We build intelligent systems that think, automate, and evolve with your business.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Web & Mobile Apps</h3>
+      <p>Modern, lightning-fast applications with premium UI/UX and scalable cloud architecture.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Cloud & DevOps</h3>
+      <p>Deploy, optimize, and scale seamlessly with cloud-native solutions.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 TwntySevn. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
